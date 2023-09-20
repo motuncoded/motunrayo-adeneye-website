@@ -1,0 +1,142 @@
+header{
+	height: 50px;
+	padding: 1rem;
+	display: flex;justify-content: space-between;
+}
+.logo>a{
+	color: var(--white);
+	font-size: 2rem;
+	letter-spacing: 2px;
+}
+.menu-loader{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.progress{
+width: 8px;
+height: 8px;
+border-radius: 50%;
+scale:0;
+margin: .25rem .25rem;
+background-color: var(--white);
+animation: spining 2s ease infinite ;
+
+
+}
+@keyframes spining{
+50%{
+	scale: 1;
+}
+	
+}
+.progress:nth-child(1){
+	animation-delay: 1.3s;
+}
+.progress:nth-child(2){
+	animation-delay: 1.5s;
+}
+.progress:nth-child(3){
+	animation-delay: 1.7s;
+}
+main{
+	display: flex;
+
+}
+.card {
+	color: var(--white);
+	width: 100%;
+	padding: 1rem;
+;
+	
+
+	
+}
+.user-card{
+	color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1rem;
+}
+.user-container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 2rem;
+}
+  .user-card > h2 {
+font-size: 2rem;
+font-weight: 300;
+max-width: 600px;
+
+}
+.user-card > h2>span{
+	font-weight: 300;
+
+}
+.portfolio{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.portfolio >  p {
+font-size:.95rem;
+max-width: 280px;
+
+}
+.navigation{
+
+color: var(--white);
+display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+		padding: 1rem;
+
+	
+
+	
+}
+.navbar-links{
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: .25rem;
+
+}
+.navbar-item{
+		margin: 1rem 0rem;
+
+	
+
+
+}
+.navbar-item >a  {
+	color: var(--white);
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+	#toogleButton{
+
+
+
+	}
+	main{
+		display: flex;
+		flex-direction: column;
+	}
+	.portfolio >  p {
+font-size:.95rem;
+max-width: 200px;
+
+}
+}
