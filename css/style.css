@@ -3,9 +3,10 @@
 
 
 :root{
-    --purple:hsl(272, 72%, 47%);
+    --purple:#7e22ce;
       --white : #f6f6f6;
-      --black:#161616;
+      --black:#1b1b1b;
+      --frost-black:#212122;
       
 }
 *:before, 
@@ -16,11 +17,13 @@
 }
 body {
     line-height: 1.5;
-      background-color: var(--black);
       color: var(--black);
       font-family: 'Fira Sans', sans-serif;
+      background-color: var(--white);
+      font-size: 18px;
 
 }
+
 a:link, a:visited{
   text-decoration: none;
           color: var(--black);
@@ -34,3 +37,4 @@ button{
   outline: none;
   background-color:transparent;
 }
+

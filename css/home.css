@@ -1,142 +1,190 @@
+.none{
+
+	display: none;
+}
 header{
-	height: 50px;
-	padding: 1rem;
-	display: flex;justify-content: space-between;
-}
-.logo>a{
-	color: var(--white);
-	font-size: 2rem;
-	letter-spacing: 2px;
-}
-.menu-loader{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: 80px;
+padding: 1rem;
 }
-.progress{
-width: 8px;
-height: 8px;
-border-radius: 50%;
-scale:0;
-margin: .25rem .25rem;
-background-color: var(--white);
-animation: spining 2s ease infinite ;
-
-
-}
-@keyframes spining{
-50%{
-	scale: 1;
-}
-	
-}
-.progress:nth-child(1){
-	animation-delay: 1.3s;
-}
-.progress:nth-child(2){
-	animation-delay: 1.5s;
-}
-.progress:nth-child(3){
-	animation-delay: 1.7s;
-}
-main{
-	display: flex;
-
-}
-.card {
-	color: var(--white);
-	width: 100%;
-	padding: 1rem;
-;
-	
-
-	
-}
-.user-card{
-	color: var(--white);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 1rem;
-}
-.user-container{
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 2rem;
-}
-  .user-card > h2 {
+.logo-layout>a{
 font-size: 2rem;
-font-weight: 300;
-max-width: 600px;
+font-weight: 600;
+}
 
-}
-.user-card > h2>span{
-	font-weight: 300;
 
-}
-.portfolio{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
-.portfolio >  p {
-font-size:.95rem;
-max-width: 280px;
-
-}
 .navigation{
-
-color: var(--white);
-display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-		padding: 1rem;
-
-	
-
-	
+	display: flex;
 }
-.navbar-links{
-	padding: 1rem;
+.navigation>li{
+	padding:0 1rem;
+}
+.navigation>li>a{
+	font-size: 1rem;
+}
+.navigation>li>a:hover{
+	border-bottom: 2px solid #402785;
+}
+.menu-icon{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	margin: .25rem;
 
 }
-.navbar-item{
-		margin: 1rem 0rem;
+
+.home-hero{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: .5fr .5fr;
+gap: 1rem;
+	padding: 1rem 2rem;
+
+}
+.first-hero{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	text-align: end;
+}
+.first-hero>h2{
+	font-size: 6rem;
+
+}
+.ellipse{
+	animation: dash 5s linear alternate infinte;
+}
+.first-name{
+		color: #402785;
+		text-shadow:  4px 3px 0px #f2c0ff  ;
+
+}
+
+.second-hero{
+	max-width: 600px;
+
+}
+.second-hero>p{
+	font-size: 1.8rem;
+}
+.about{
+	background-color: var(--black);
+		color:var(--white);
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	grid-template-rows: 1fr;
+}
+.about>h2{
+	font-size: 1rem;
+	opacity:.5;
+}
+.about-paragraph>h3{
+	font-size: 2rem;
+	padding: 2rem 0;
+	max-width: 500px;
 
 	
-
-
 }
-.navbar-item >a  {
+.second-paragraph{
+	color: gray;
+}
+.paragraph-one{
+color: var(--white);}
+.project-hero{
+	background-color: var(--black);
 	color: var(--white);
+		padding: 2rem;
+
+}
+.project-hero>h2{
+	font-size: 1rem;
+	opacity:.5;
+}
+.project-grid{
+	display: grid;
+grid-template-columns: 1fr ;
+grid-template-rows: .5fr .5fr;
+gap: 1rem;
+	padding: 1rem 2rem;
+}
+.project-layout-1{
+display: flex;
+justify-content: flex-start;
+gap: 1rem;
+
+}
+.project-layout-2{
+display: flex;
+justify-content:flex-end ;
+gap: 1rem;
+
 
 
 }
+.project-layout-3{
+display: flex;
+justify-content:flex-start;
+gap: 1rem;
 
 
-
-
-
-
-
-@media (max-width: 768px) {
-	#toogleButton{
-
-
-
-	}
-	main{
-		display: flex;
-		flex-direction: column;
-	}
-	.portfolio >  p {
-font-size:.95rem;
-max-width: 200px;
 
 }
+	
+.project-layout-1>.box{
+background-color: aliceblue;
+	width: 400px;
+	height: 300px;
 }
+.project-layout-2>.box{
+	background-color: blanchedalmond;
+		width: 400px;
+	height: 300px;
+}
+.project-layout-3>.box{
+	background-color: antiquewhite;
+		width: 400px;
+	height: 300px;
+}
+.contact-hero{
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 2rem;
+		background-color: var(--black);
+		color: var(--white);
+
+}
+.contact-article>h2{
+	font-size: 1rem;
+}
+.contact-article>p{
+	font-size: 4rem;
+}.contact-hero>a{
+	margin: 1rem 0;
+	width: 100px;
+	padding: .5rem;
+	border-radius: 10vmax;
+	color:var(--white);
+background-color: var(--purple);
+text-align: center;
+}
+.contact-hero>a:hover{
+	background-color: plum;
+}
+footer{
+	background-color: var(--black);
+	color: white;
+padding: 1rem;
+	text-align: center;
+}
+@media (max-width:500px){
+.home-hero{
+	display: grid;
+grid-template-columns: .3fr;
+}
+.first-hero>h2{
+font-size: 2rem;
+}
+.second-hero{
+	max-width: 300px;
+}}

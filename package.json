@@ -10,5 +10,10 @@
   },
   "devDependencies": {
     "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "particles.js": "^2.0.0",
+    "rough-notation": "^0.5.1"
   }
 }

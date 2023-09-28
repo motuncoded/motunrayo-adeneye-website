@@ -1,24 +1,21 @@
 .loader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--black);
-    color: var(--white);
-    text-align: center;
-min-height: 100vh;}
-
-.loading{
-width: 20px;
-border-radius: 50%;
-aspect-ratio: 1;
-background-color: #7E22CE;
-animation: skar1 1s infinte alternate,
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
 }
-@keyframes a1{
-    0%,10%{transform: scale(1)}
-    100%{transform: scale(0)}
-
-};
-
+.loader>h3{
+  font-size: 2rem;
+}
+.loader>h3>span{
+font-weight: 200;
+}
+.loader>h6{
+    font-size: 2rem;
+    font-weight: 200;
+}
+.none{
+  display: none;
+}
 
