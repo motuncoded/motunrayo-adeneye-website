@@ -3,9 +3,11 @@
 
 
 :root{
-    --purple:#7e22ce;
+    --purple:#7c73e6;
       --white : #f6f6f6;
+      --secondary-white:#d6e7ff;
       --black:#1b1b1b;
+      --gray:#808080;
       --frost-black:#212122;
       
 }
@@ -15,13 +17,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+html{
+  scroll-behavior: smooth;
+}
 body {
-    line-height: 1.5;
       color: var(--black);
       font-family: 'Fira Sans', sans-serif;
-      background-color: var(--white);
+background-color: white ;
       font-size: 18px;
-
+      min-height: 100vh;
+      line-height: 1.5;
+    
+}
+h1,h2,h3,h4,button, input, label{
+  line-height: 1.1;
 }
 
 a:link, a:visited{
@@ -37,4 +51,7 @@ button{
   outline: none;
   background-color:transparent;
 }
-
+img,svg{
+  display: block;
+  max-width: 100%;
+}
