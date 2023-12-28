@@ -1,35 +1,38 @@
-
-
-  .user-card > h2 {
-font-size: 2rem;
-font-weight: 300;
-max-width: 600px;
-
+.user-card > h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  max-width: 600px;
 }
-  .user-card > p {
-font-size: 1rem;
-font-weight: 300;
-max-width: 600px;
-	text-decoration-style: dotted;
-	text-decoration-color: var(--white);
-
-
+.user-card > p {
+  font-size: 1rem;
+  font-weight: 300;
+  max-width: 600px;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--white);
 }
-.dotted{
-display: inline-block;
-border-bottom: 1px dotted var(--white);
-padding-bottom: 1px;
+.dotted {
+  display: inline-block;
+  border-bottom: 1px dotted var(--white);
+  padding-bottom: 1px;
 }
-.skills-card{
-display: flex;
-justify-content: space-between;
-align-items: center;
+.skills-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.polygon{
-	margin: 1rem;
-	padding: 1rem;
-	background-color: var(--white);
-	color: var(--black);
-	clip-path: polygon(20% 0%,80% 0%, 100% 20%,100% 80%,  80% 100%, 20% 100%, 0% 80%, 0 20%);
+.polygon {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--white);
+  color: var(--black);
+  clip-path: polygon(
+    20% 0%,
+    80% 0%,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    0% 80%,
+    0 20%
+  );
 }
-

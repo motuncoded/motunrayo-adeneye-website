@@ -1,21 +1,20 @@
-.loader{
+.loader {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
 }
-.loader>h3{
+.loader > h3 {
   font-size: 2rem;
 }
-.loader>h3>span{
-font-weight: 200;
+.loader > h3 > span {
+  font-weight: 200;
 }
-.loader>h6{
-    font-size: 2rem;
-    font-weight: 200;
+.loader > h6 {
+  font-size: 2rem;
+  font-weight: 400;
 }
-.none{
+.none {
   display: none;
 }
-
