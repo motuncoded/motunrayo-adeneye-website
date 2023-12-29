@@ -7,7 +7,6 @@
   --secondary-white: #d6e7ff;
   --black: #212529;
   --gray: #808080;
-  --frost-black: #212122;
 }
 *:before,
 *:after,
@@ -25,12 +24,12 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  color: var(--black);
   font-family: "Fira Sans", sans-serif;
   background-color: var(--white);
   font-size: 18px;
   min-height: 100vh;
   line-height: 1.5;
+  color: var(--black);
 }
 h1,
 h2,
@@ -45,7 +44,7 @@ label {
 a:link,
 a:visited {
   text-decoration: none;
-  color: var(--black);
+  color: inherit;
 }
 ol,
 ul {

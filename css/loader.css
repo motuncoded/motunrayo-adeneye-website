@@ -18,3 +18,8 @@
 .none {
   display: none;
 }
+@media (max-width: 32em) {
+  .loader {
+    text-align: center;
+  }
+}

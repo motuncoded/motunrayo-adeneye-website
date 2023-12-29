@@ -27,9 +27,48 @@
     />
     <meta property="og:image" content="URL to an image" />
 
-    <meta name="theme-color" content="#" />
-    <meta name="msapplication-TileColor" content="#7E22CE" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#7E22CE" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/loader.css" />
     <link rel="stylesheet" href="./css/about.css" />
@@ -44,41 +83,47 @@
 
       <div class="hero none" id="home">
         <header class="primary-header">
-          <div class="logo-layout">
-            <a href="#">MA<span class="first-letter">.</span></a>
-          </div>
+          <div class="logo"><a href="#">MA</a></div>
           <nav>
             <ul class="navigation">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
 
-              <li><a href="#portfolio">Work</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">Work</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
             </ul>
-            <div class="menu-icon">
-              <span></span>
-              <span></span>
-              <span></span>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
             </div>
           </nav>
         </header>
         <!--Header ends-->
+        <!-- Hero page starts-->
 
-        <div class="home-hero">
+        <div class="home-hero" id="home">
           <div class="left">
-            <div class="left-content">
-              <h2>Frontend developer</h2>
-              <p class="waving-hand">&#x1f44b;</p>
-            </div>
-            <h4>
+            <h2>Frontend developer</h2>
+            <h3>
               Hi, I am Adeneye Motunrayo. A passionate Frontend developer based
               in Lagos, Nigeria.
-            </h4>
+            </h3>
             <button>Resume</button>
             <div class="stack">
-              <h5>Tech Stack</h5>
+              <h4>Tech Stack</h4>
               <div class="stack-icons">
-                <img src="/assests/html5.png" alt="html-icon" />
+                <img
+                  src="/assests/html5.png"
+                  class="html-icon"
+                  alt="html-icon"
+                />
                 <img src="/assests/css.png" alt="css-icon" />
                 <img src="/assests/javascript.png" alt="javascript-icon" />
                 <img src="/assests/reactjs.png" alt="reactjs-icon" />
@@ -86,106 +131,162 @@
             </div>
           </div>
           <div class="right">
-            <div class="image-container">
+            <div class="right">
               <img src="/assests/motunpix.png" />
             </div>
           </div>
         </div>
-        <section id="about">
-          <h3>ABOUT ME</h3>
-          <img src="/assests/laptop.jpg" alt="laptop" />
 
+        <!--Hero page ends-->
+
+        <!--About page starts-->
+        <section id="about">
+          <h2>ABOUT ME</h2>
           <h6>
             A passionate frontend developer based in Lagos, Nigeria
             &#x1f469;&zwj;&#x1f4bb;
           </h6>
-          <div class="about-content">
-            <p>
-              I am a front-end developer ith a staggering panoply of talents in
-              HTML, CSS and JavaScript. My core experiernces lie in designing
-              and maintaining a smooth user experience on responsive websites.
-            </p>
-            <p>
-              I an seasoned in designing engaging and dynamic interfaces by
-              writing pure and optimized code whilst making use of sophicated
-              development tools and skills, I also pride myself in being a
-              collaborative individual who relates with others in a
-              multi-functional environment to deliver on set targets.
-            </p>
+          <div class="about-container">
+            <div class="about-image">
+              <img src="./assests/laptop.jpg" alt="laptop" />
+            </div>
+            <div class="about-content">
+              <p>
+                I am a front-end developer with a staggering panoply of talents
+                in HTML, CSS and JavaScript. My core experiernces lie in
+                designing and maintaining a smooth user experience on responsive
+                websites.
+              </p>
+              <p>
+                I am seasoned in designing engaging and dynamic interfaces by
+                writing pure and optimized code whilst making use of sophicated
+                development tools and skills, I also pride myself in being a
+                collaborative individual who relates with others in a
+                multi-functional environment to deliver on set targets.
+              </p>
+            </div>
           </div>
         </section>
+        <!--About page ends-->
+        <!--Work page starts -->
+
         <section id="portfolio">
-          <h3>PORTFOLIO</h3>
-          <h6>Creating projects in a unique manner. &#x1f4bb;</h6>
+          <h2>PORTFOLIO</h2>
+          <h3>Creating projects in a unique manner. &#x1f4bb;</h3>
           <div class="portfolio-container">
             <div class="portfolio-card">
-              <img
-                src="./assests/Addulfatah-website.png"
-                alt="Abdulfatah-website"
-              />
-              <div class="portfolio-article">
-                <h3>Abdulfatah Portfolio Website</h3>
-                <p>
-                  A portfolio website is an platform that showcasing the skills
-                  and experiences of the client as a software developer.
-                </p>
+              <img src="./assests/abdulfatah-portfolio.png" alt="Abdul-fatah" />
+              <div class>
+                <div class="portfolio-article">
+                  <h4>Abdulfatah Portfolio Website</h4>
+                  <h5>
+                    A portfolio website is an platform that showcasing the
+                    skills and experiences of the client as a software
+                    developer.
+                  </h5>
+                </div>
+                <div class="portfolio-skills">
+                  <p>React</p>
+                  <p>Vanilla CSS</p>
+                  <p>Github Pages</p>
+                </div>
+                <div class="portfolio-icons">
+                  <div data-tooltip="github link">
+                    <a class="githun-link" href="">
+                      <img
+                        src="./assests/code.png"
+                        width="30px"
+                        alt="github-link"
+                      />
+                    </a>
+                  </div>
+                  <div data-tooltip="github link">
+                    <a href="">
+                      <img
+                        src="./assests/search-product.png"
+                        width="30px"
+                        alt="web-link"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="portfolio-skills">
-                <h3>React</h3>
-                <h3>Vanilla CSS</h3>
-                <h3>Github Pages</h3>
-              </div>
-              <div class="portfolio-icons"></div>
             </div>
+            ;
 
             <div class="portfolio-card">
               <img
-                src="./assests/Addulfatah-website.png"
-                alt="Abdulfatah-website"
+                src="./assests/monify-desktop.png"
+                alt="Monify-landing-page"
               />
-              <div class="portfolio-article">
-                <h3>eShop - ecommerce website</h3>
-                <p>
-                  An ecommerce website is an website showcasing the products
-                  that are require to be sold
-                </p>
-              </div>
-              <div class="portfolio-skills">
-                <h3>React</h3>
-                <h3>React Router</h3>
-                <h3>Vanilla CSS</h3>
-                <h3>Vercel</h3>
+              <div class>
+                <div class="portfolio-article">
+                  <h4>Monify landing page</h4>
+                  <h5>
+                    A banking website that gives information on the effortlessly
+                    manage your finanaces providing a seamless functionality.
+                  </h5>
+                </div>
+                <div class="portfolio-skills">
+                  <p>React</p>
+                  <p>Vanilla CSS</p>
+                  <p>Vercel</p>
+                </div>
+                <div class="portfolio-icons"></div>
               </div>
             </div>
-
-            <div class="portfolio-card">
-              <img
-                src="./assests/Addulfatah-website.png"
-                alt="Abdulfatah-website"
-              />
-              <div class="portfolio-article">
-                <h3>Abdulfatah Portfolio Website</h3>
-                <p>A portfolio website is an platform that showcasing</p>
-              </div>
-              <div class="portfolio-icons"></div>
-            </div>
+            ;
           </div>
         </section>
+
+        <!--Work page ends -->
+
+        <!-- Contact page starts-->
+
         <section id="contact">
-          <h3>CONTACT</h3>
-          <h6>Want to talk! Send a message. &#x1f517;</h6>
+          <h2>CONTACT</h2>
+          <h3>Want to talk! Send a message. &#x1f517;</h3>
           <div class="socials">
             <div class="social-image">
-              <img src="/assests/linkedin-logo.jpg" />
-              <p>linkedin/in/</p>
+              <a
+                href="https://www.linkedin.com/in/motunrayoadeneye/"
+                class="image-link linkedin"
+                target="_blank"
+              >
+                <img
+                  src="/assests/linkedin-logo.jpg"
+                  class="linkedin"
+                  data-animation-offset="1.0"
+                />
+              </a>
             </div>
             <div class="social-image">
-              <img src="/assests/" alt="" />
-              <p>linkedin/in/</p>
+              <a
+                href="https://twitter.com/motunadeneye"
+                class="image-link twitter"
+                target="_blank"
+              >
+                <img src="/assests/twitter-logo.jpg" alt="" srcset="" />
+              </a>
+            </div>
+
+            <div class="social-image">
+              <a href="" target="_blank" class="image-link mail">
+                <img
+                  src="/assests/arroba.png"
+                  alt=""
+                  srcset=""
+                  data-animation-offset="1.1"
+                />
+              </a>
             </div>
           </div>
         </section>
-        <footer>Copyright &#9426; 2023. All right are reserved.</footer>
+        <!-- Contact page ends-->
+
+        <footer>
+          <p>&#169; 2023 Designed by Motunrayo Adeneye.</p>
+        </footer>
       </div>
     </div>
 
