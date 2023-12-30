@@ -252,8 +252,28 @@
     </div>
 
     <!--Home page ends-->
-   <script src="loader.js"></script>
-    <script src="navbar.js"></script>
-    <script src="navScroll.js"></script>
+   <script>
+const loader = document.getElementById("loading");
+const container = document.querySelector(".container");
+const hero = document.querySelector(".hero");
+
+
+
+let load = 0;
+setInterval(function () {
+  loader.textContent = `${load} %`;
+  if (load < 100) {
+    load++;
+  } else {
+    setTimeout(function () {
+      container.classList.add("none");
+      hero.classList.remove("none");
+    }, 2000);
+  }
+}, 100);
+
+
+   </script>
+  
 
 </html>
