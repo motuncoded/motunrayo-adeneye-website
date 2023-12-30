@@ -82,7 +82,7 @@
             Hi, I am Adeneye Motunrayo. A passionate Frontend developer based in
             Lagos, Nigeria.
           </h3>
-          <button>Resume</button>
+           <a href="mailto:https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" >Hire Me</a>
           <div class="stack">
             <h4>Tech Stack</h4>
             <div class="stack-icons">
@@ -256,7 +256,7 @@
           </div>
 
           <div class="social-image">
-            <a href="" target="_blank" class="image-link mail">
+            <a href="mailto:https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank" class="image-link mail">
               <img
                 src="/assests/arroba.png"
                 alt=""
@@ -276,7 +276,7 @@
 
     <!--Home page ends-->
 
-
+<!--Javascript files-->
        <script>
 const loader = document.getElementById("loading");
 const container = document.querySelector(".container");
@@ -296,6 +296,33 @@ setInterval(function () {
     }, 2000);
   }
 }, 100);
+
+const hamburger = document.querySelector(".hamburger");
+const navigation = document.querySelector(".navigation");
+const navLink = document.querySelectorAll(".nav-link");
+
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  navigation.classList.toggle("active");
+}
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navigation.classList.remove("active");
+  
+}
+const primaryHeader = document.querySelector(".primary-header");
+const scrollWatch = document.createElement("div");
+
+scrollWatch.setAttribute("data-scroll-watch", "");
+primaryHeader.before(scrollWatch);
+const navObserver = new IntersectionObserver((entries) => {
+  primaryHeader.classList.toggle("sticking");
+});
+navObserver.observe(scrollWatch);
+
 
 
    </script>
