@@ -459,7 +459,7 @@ footer {
   }
   .portfolio-card:nth-child(2) {
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
   }
   .socials {
   }
