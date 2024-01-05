@@ -288,7 +288,7 @@ let load = 0;
 setInterval(function () {
   loader.textContent = `${load} %`;
   if (load < 100) {
-    load++;
+    load = load + 10;
   } else {
     setTimeout(function () {
       container.classList.add("none");
