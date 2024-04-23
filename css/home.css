@@ -70,7 +70,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  padding: 4rem;
+  padding-top: 4rem;
 }
 
 .left {
@@ -80,7 +80,6 @@
 
 .left > h2 {
   font-size: 3rem;
-  padding-top: 1rem;
 }
 
 @keyframes shake {
@@ -104,17 +103,17 @@
   font-weight: 400;
   font-size: 1rem;
   color: var(--gray);
-  margin: 1rem 0;
   padding-top: 0.25rem;
-  line-height: 1.5;
+  padding-bottom: 1rem;
 }
 .left > a {
   border: 2px solid var(--black);
   background-color: var(--black);
   color: var(--white);
   padding: 0.55rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   border-radius: 0.2rem;
+  font-size: 1rem;
 }
 
 .left > a:hover {
@@ -360,7 +359,7 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-top: 2rem;
+  padding-top: .5rem;
 }
 footer {
   color: var(--black);
@@ -473,7 +472,7 @@ footer {
     color: var(--black);
   }
   #home {
-    padding: 1rem 0;
+    padding: 0rem 0;
   }
 
   .left {
